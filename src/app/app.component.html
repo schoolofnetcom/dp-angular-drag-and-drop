@@ -1,0 +1,15 @@
+<div dndDraggable="e" class="letters">e</div>
+<div dndDraggable="r" class="letters">r</div>
+<div dndDraggable="i" class="letters">i</div>
+<div dndDraggable="k" class="letters">k</div>
+<div dndDraggable="---" class="letters">---</div>
+
+<div dndDropzone (dndDrop)="onDrop($event)" class="dropzone">
+  Arraste aqui
+
+  <ul>
+    <li *ngFor="let letter of letters">{{ letter }}</li>
+  </ul>
+
+  <div dndPlaceholderRef class="drop-placeholder">Pode soltar</div>
+</div>
